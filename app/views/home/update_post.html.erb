@@ -1,0 +1,16 @@
+<h1>Home#update_post</h1>
+<p>Find me in app/views/home/update_post.html.erb</p>
+<form action="/home/update/<%=@updating.id%>" method="post">
+  <fieldset>
+    <legend>게시물 수정</legend>
+    <label for="update_title">제목:</label><br>
+    <input type="text" id="update_title" name="update_title" value="제목"><br>
+    부제:<br>
+    <input type="text" name="update_subtitle" placeholder="부제목"><br>
+    내용:<br>
+    <textarea name="update_content" row="40" col="8">
+        asd
+    </textarea><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>

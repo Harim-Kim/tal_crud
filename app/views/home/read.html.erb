@@ -1,0 +1,8 @@
+<h1>Home#read</h1>
+<p>Find me in app/views/home/read.html.erb</p>
+제목:<%=@one_post.title%> <br>
+부제:<%=@one_post.subtitle%> <br>
+내용:<%=@one_post.content %><br>
+조회수:<%=@one_post.view%><hr>
+<a href="/home/delete/<%=@one_post.id%>">[삭제]</a><br>
+<a href="/home/update_post/<%=@one_post.id%>">[수정]</a>

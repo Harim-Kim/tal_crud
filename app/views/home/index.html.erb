@@ -1,0 +1,17 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<table style="width:100%">
+  <tr>
+    <th>제목</th>
+    <th>부제</th> 
+    <th>조회수</th>
+  </tr>
+  <% @posts.each do |p| %>
+  <tr>
+    <td><a href="/home/read/<%=p.id%>"><%=p.title%></a></td>
+    <td><%=p.subtitle%></td> 
+    <td><%=p.view%></td>
+  </tr>
+  <% end %>
+  
+</table>
